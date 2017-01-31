@@ -1,0 +1,8 @@
+.todo-item{
+	display:flex;
+	margin-bottom:20px;
+
+	& .button{
+		margin:0px 5px;
+	}
+}

@@ -1,0 +1,42 @@
+@mixin color($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+
+.button{
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.color-primary{
+        @include color(#fff, #337ab7);
+    }
+    &.color-success{
+        @include color(#fff, #4CAF50);
+    }
+    &.color-info{
+        @include color(#fff, #31b0d5);
+    }
+    &.color-warning{
+        @include color(#fff, #ec971f);
+    }
+    &.color-danger{
+        @include color(#fff, #c9302c);
+    }
+    &.size-small{
+        font-size: 14px;
+        padding: 3px 10px;
+        font-weight: bold;
+    }
+    &.size-medium{
+        font-size: 18px;
+        padding: 8px 23px;
+        font-weight: bold;
+    }
+    &.size-big{
+        font-size: 22px;
+        padding: 13px 30px;
+        font-weight: bold;
+    }
+}
