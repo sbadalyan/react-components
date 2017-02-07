@@ -4,6 +4,7 @@ import Tabs from '../components/Tabs.jsx';
 import ButtonsView from './ButtonsView.jsx';
 import DropDownView from './DropDownView.jsx';
 import ToDoListView from './ToDoListView.jsx';
+import SliderView from './SliderView.jsx';
 import RegistrationView from './RegistrationView.jsx'
 
 export default class TabView extends React.Component{
@@ -27,7 +28,11 @@ export default class TabView extends React.Component{
 		 		{
 		 			name:'Registration',
 		 			id:'tab4'
-		 		}
+		 		},
+				{
+					name:'Slider',
+					id:'tab5'
+				}
 		 	]
 		 } 
 	}
@@ -50,6 +55,9 @@ export default class TabView extends React.Component{
 			}
 			case 'tab4':{
 				return <RegistrationView/>
+			}
+			case 'tab5':{
+				return <SliderView/>
 			}
 		}
 	}
